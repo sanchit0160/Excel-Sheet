@@ -1,1 +1,6 @@
-
+UPSC-CSE(P)-GS1
+Considering:
+B1 refers to the cell in column B where the student's answer is entered.
+C1 refers to the cell in column C where the correct answer is stored.
+To calculate marks in column D based on the conditions(0 for no answer, +2 for correct, and -2/3 for incorrect), you can use the following formula in cell D1:
+=IF(B1="", 0, IF(B1=C1, 2, -2/3))
